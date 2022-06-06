@@ -32,6 +32,7 @@
             list.Display();
             list.DeleteLast();                             //UC6
             list.Display();
+            list.SearchNode(30);                           //UC7
         }
     }
 }
