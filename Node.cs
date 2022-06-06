@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace DataStructuresDemo
 {
-    public class Node
+    internal class Node
     {
-        public int data;         //holds elements
-        public Node next;        //holds pointer position of next element
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Node"/> class.
-        /// </summary>
-        /// <param name="data">The data.</param>
+        //Instance var.
+        public int data;
+        public Node next;
+        //Constructor to create a Node with data and next pointer.
         public Node(int data)
         {
             this.data = data;
+            this.next = null;
         }
     }
 }
+
