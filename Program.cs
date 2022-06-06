@@ -28,6 +28,8 @@
             list.Display();
             list.InsertAtPosition(3, 30);
             list.Display();
+            list.DeleteFirst();                             //UC5
+            list.Display();
         }
     }
 }
