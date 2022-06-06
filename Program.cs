@@ -22,7 +22,12 @@
             //list.Append(70);
             //list.Display();
 
-            
+            LinkedList list = new LinkedList();             //UC4
+            list.Append(56);
+            list.Append(70);
+            list.Display();
+            list.InsertAtPosition(3, 30);
+            list.Display();
         }
     }
 }
