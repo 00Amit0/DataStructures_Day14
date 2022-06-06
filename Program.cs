@@ -35,6 +35,7 @@
             list.SearchNode(30);                           //UC7
             list.InsertAfter(15, 30);                      //UC8
             list.Display();
+            list.Size();                                   //UC9
         }
     }
 }
