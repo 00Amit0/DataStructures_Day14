@@ -59,6 +59,14 @@ namespace DataStructuresDemo
             head = newnode;
             Console.WriteLine("{0} : Nodes inserted in Linked list ", newnode.data);
         }
+        //method to append 
+        public void Append(int data)
+        {
+            Add(data);
+            Console.WriteLine("{0} node Appended", data);
+        }
+        //method to insert at certain position
+        
 
     }
 }
