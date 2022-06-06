@@ -17,12 +17,10 @@
             //list.AddFirst(56);
             //list.Display();
 
-            //list.Append(56);                              //UC3
-            //list.Append(30);
-            //list.Append(70);
-            //list.Display();
-
-            
+            list.Append(56);                              //UC3
+            list.Append(30);
+            list.Append(70);
+            list.Display();     
         }
     }
 }
