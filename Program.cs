@@ -22,20 +22,31 @@
             //list.Append(70);
             //list.Display();
 
-            LinkedList list = new LinkedList();             //UC4
-            list.Append(56);
-            list.Append(70);
-            list.Display();
-            list.InsertAtPosition(3, 30);
-            list.Display();
-            list.DeleteFirst();                             //UC5
-            list.Display();
-            list.DeleteLast();                             //UC6
-            list.Display();
-            list.SearchNode(30);                           //UC7
-            list.InsertAfter(15, 30);                      //UC8
-            list.Display();
-            list.Size();                                   //UC9
+            //LinkedList list = new LinkedList();             //UC4
+            //list.Append(56);
+            //list.Append(70);
+            //list.Display();
+            //list.InsertAtPosition(3, 30);
+            //list.Display();
+            //list.DeleteFirst();                             //UC5
+            //list.Display();
+            //list.DeleteLast();                             //UC6
+            //list.Display();
+            //list.SearchNode(30);                           //UC7
+            //list.InsertAfter(15, 30);                      //UC8
+            //list.Display();
+            //list.Size();                                   //UC9
+
+            SortedLinkedList<int> sortedLinkedList = new SortedLinkedList<int>();
+            sortedLinkedList.Add(new SortedNode<int>(70));
+            sortedLinkedList.Add(new SortedNode<int>(40));
+            sortedLinkedList.Add(new SortedNode<int>(30));
+            sortedLinkedList.Add(new SortedNode<int>(56));
+            Console.WriteLine("LinkedList before sorting");
+            sortedLinkedList.Display();
+            sortedLinkedList.SortedList();
+            Console.WriteLine("LinkedList after sorting");
+            sortedLinkedList.Display();
         }
     }
 }
