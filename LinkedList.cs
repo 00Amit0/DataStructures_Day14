@@ -65,8 +65,5 @@ namespace DataStructuresDemo
             Add(data);
             Console.WriteLine("{0} node Appended", data);
         }
-        //method to insert at certain position
-        
-
     }
 }
