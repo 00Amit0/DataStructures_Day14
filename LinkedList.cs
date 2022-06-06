@@ -153,6 +153,31 @@ namespace DataStructuresDemo
             Console.WriteLine("{0} is not a Linked List Node", value);
             return 0;
         }
+        //method to insert value after a certain value
+        public void InsertAfter(int data, int x)
+        {
+            Node p = head;
+            while (p != null)
+            {
+                if (p.data == x)
+                {
+                    break;
 
+                }
+                p = p.next;
+            }
+            if (p == null)
+            {
+                Console.WriteLine(x + "not present in list");
+
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp.next = p.next;
+                p.next = temp;
+            }
+
+        }
     }
 }
