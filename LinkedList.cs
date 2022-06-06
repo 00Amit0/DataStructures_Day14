@@ -10,7 +10,7 @@ namespace DataStructuresDemo
     {
         public Node head;
         //Method to Add Node in Linked List
-        public void Add(int data)
+        public void AddLast(int data)
         {
             Node newnode = new Node(data);
             //condition to Check head and add first Node.
@@ -62,7 +62,7 @@ namespace DataStructuresDemo
         //method to append 
         public void Append(int data)
         {
-            Add(data);
+            AddLast(data);
             Console.WriteLine("{0} node Appended", data);
         }
         //method to insert at certain position
@@ -99,15 +99,43 @@ namespace DataStructuresDemo
                 Console.WriteLine("node inserted at position : " + (i + 1));
             }
         }
-        public void DeleteFirst()
+        //Method to delete first node
+        public int DeleteFirst()
         {
             if (this.head == null)
             {
                 Console.WriteLine("list is already empty, there is nothing to delete");
+                return 0;
             }
             int deleteNode = this.head.data;
             this.head = this.head.next;
             Console.WriteLine("node deleted is " + deleteNode);
+            return deleteNode;
+        }
+
+        //Method to delete Last Node
+        public int DeleteLast()
+        {
+            Node newNode = this.head;
+            if (this.head == null)
+            {
+                Console.WriteLine("list is already empty, there is nothing to delete");
+                return 0;
+            }
+            if (this.head.next == null)
+            {
+                this.head = null;
+                return 0;
+            }
+            //checking for tail Node.
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            int deleteLastNode = newNode.next.data;
+            newNode.next = null;
+            Console.WriteLine("node deleted at Last position is " + deleteLastNode);
+            return deleteLastNode;
         }
 
     }

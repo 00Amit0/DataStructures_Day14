@@ -7,9 +7,9 @@
             Console.WriteLine("Heyyy do u know what is linked list");
 
             //LinkedList list = new LinkedList();
-            //list.Add(56);                               //UC1
-            //list.Add(30);
-            //list.Add(70);
+            //list.AddLast(56);                               //UC1
+            //list.AddLast(30);
+            //list.AddLast(70);
             //list.Display();
 
             //list.AddFirst(70);                          //UC2
@@ -29,6 +29,8 @@
             list.InsertAtPosition(3, 30);
             list.Display();
             list.DeleteFirst();                             //UC5
+            list.Display();
+            list.DeleteLast();                             //UC6
             list.Display();
         }
     }
